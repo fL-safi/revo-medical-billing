@@ -1,0 +1,352 @@
+/* this media qurry is for laptops and larger device which has width b/w
+1320px to 900px
+*/
+@media (max-width: 1320px) {
+  .main-container {
+    max-width: 100rem;
+    padding: 0 5rem;
+  }
+  .small-p {
+    font-size: 1.3rem;
+    line-height: 22px;
+  }
+  .big-p {
+    font-size: 1.5rem;
+    line-height: 21px;
+    color: #333333;
+    font-weight: 500;
+    text-align: justify;
+  }
+  footer {
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 5rem 5rem 1rem 5rem;
+  }
+}
+
+/* 
+********* 900px ********
+*/
+@media (max-width: 900px) {
+  .margin-s {
+    margin: 6rem 0rem;
+  }
+  .hero {
+    flex-direction: column-reverse;
+    align-items: normal;
+    gap: 2rem;
+  }
+  .choose {
+    flex-direction: column;
+  }
+  .hero-img,
+  .choose-img,
+  .m-img,
+  .pg2-img,
+  .service-box-outline,
+  .chose-sml-img {
+    width: 100%;
+  }
+
+  .hide-h3,
+  .dots,
+  .destoop,
+  .dots-T,
+  .dots-B,
+  .vector-T,
+  .vector-B,
+  .curve-line-about {
+    display: none;
+  }
+  .mobile-img {
+    display: block;
+  }
+  .show-h3 {
+    display: block;
+    margin: 2rem 0;
+    text-align: start;
+    line-height: 30px;
+  }
+  .m-img {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  .m-img img {
+    width: 50%;
+  }
+  .our-missin {
+    flex-direction: column-reverse;
+    padding-top: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  .m-text {
+    flex-basis: 100%;
+  }
+
+  .customers {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .hero-chge {
+    flex-direction: column;
+    align-items: normal;
+    gap: 2rem;
+  }
+  .contact-form-layout {
+    flex-direction: column;
+    align-items: normal;
+  }
+  .our-services {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .service-box,
+  .service-box-outline {
+    width: 100%;
+  }
+  .our-services-reverse {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+  .spec-layout {
+    flex-direction: column-reverse;
+    align-items: normal;
+    gap: 2rem;
+  }
+  .form-specs {
+    flex-direction: column;
+  }
+  .specs-froms-box {
+    margin: 0 3rem;
+    margin-top: -8rem;
+    padding: 2rem;
+  }
+}
+/* 
+********* 800px ********
+*/
+@media (max-width: 800px) {
+  .main-container {
+    max-width: 100rem;
+    padding: 0 2rem;
+  }
+  .edit-h2 {
+    font-size: 3rem;
+  }
+  .w-btn {
+    font-size: 1.6rem;
+    padding: 13px 16px;
+  }
+  .specialities-layout,
+  .footer-top,
+  .boxes-8 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .mdl-boxes {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .mdl-bx {
+    width: 100%;
+  }
+  .page1-form {
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+  .page1-form .p-btn {
+    width: 100%;
+    padding: 1.8rem auto;
+  }
+  .input {
+    width: 100%;
+  }
+  footer,
+  .contact-hero {
+    padding: 4rem 2rem;
+  }
+  footer {
+    margin-top: 4rem;
+  }
+  /* .mdl-bx--change, */
+  .for-destop {
+    display: none;
+  }
+  .contact-hero-img {
+    flex-direction: column;
+    padding: 4rem 1.4rem 0rem 1.4rem;
+  }
+  .blogs-layout {
+    flex-direction: column;
+  }
+  .box {
+    padding: 2rem 1rem;
+  }
+  .spec-layout {
+    padding: 2rem 2rem;
+    padding-bottom: 10rem;
+  }
+  .chnaged-bg-boxes {
+    padding: 4rem 1rem;
+  }
+  .for-mobile {
+    display: block;
+    padding: 1rem;
+  }
+}
+/* 
+********* 560px ********
+*/
+@media (max-width: 560px) {
+  h2 {
+    font-size: 2.6rem;
+    line-height: 34px;
+  }
+  .edit-h2 {
+    font-size: 2.4rem;
+    line-height: 34px;
+  }
+  h3 {
+    font-size: 1.8rem;
+    line-height: 20px;
+    margin-bottom: 0rem;
+  }
+  h5 {
+    font-size: 1.8rem;
+  }
+  .margin-s {
+    margin: 3rem 0rem;
+  }
+
+  /* mobile naviagtions */
+  #navbar-group {
+    position: fixed;
+    height: 100vh;
+    background-color: #fffffff6;
+    width: 100%;
+    z-index: 99999999999;
+    top: 80px;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding-top: 2rem;
+    /* transform: translateX(300px); */
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    /* right: 500px; */
+    transition: 0.3s ease-in-out;
+    /* display: none; */
+  }
+  #navbar-group.active {
+    /* right: 0px; */
+    /* transform: translateX(0px); */
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+  #menu {
+    display: block;
+    cursor: pointer;
+    transition: 0.1s all;
+  }
+  #menu:hover {
+    transform: rotate(180deg);
+  }
+  #menu {
+    display: block;
+    cursor: pointer;
+  }
+  .mobile {
+    display: block;
+  }
+  .special-link {
+    display: block;
+  }
+  .link {
+    font-family: "Poppins";
+    font-size: 2.6rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #888888;
+  }
+  /* ^************************^ */
+
+  .p-btn {
+    margin-top: 1.4rem;
+    font-size: 1.3rem;
+    padding: 12px 24px 12px 24px;
+  }
+  .testi-top-p {
+    display: none;
+  }
+  .cus {
+    padding: 2rem 1rem 2rem 2rem;
+  }
+  .cus1-p {
+    font-size: 1.2rem;
+  }
+  .footer-logo {
+    display: flex;
+    justify-content: end;
+  }
+  .social-bg {
+    display: none;
+  }
+  .social-sm {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  .copyright-text {
+    text-align: center;
+  }
+  /* .mdl-boxes, */
+  .form-page2 {
+    grid-template-columns: 1fr;
+  }
+  .contact-hero {
+    padding: 2rem;
+    margin: 0rem;
+  }
+  .contact-form-layout {
+    margin-top: 5rem;
+  }
+  .service-box {
+    padding: 4rem 1rem 4rem 2rem;
+  }
+  .service-box-outline {
+    padding: 4rem 1rem 4rem 2rem;
+  }
+  .spec-layout {
+    margin: 0rem;
+    margin-top: 3rem;
+  }
+  .specs-froms-box {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  .box-no1,
+  .box-no2 {
+    height: 15rem;
+  }
+  .chnaged-bg-boxes {
+    margin-top: 4rem;
+  }
+  .form-specs-2 input {
+    flex-basis: 60%;
+  }
+  .footer-top {
+    grid-template-columns: 1fr;
+  }
+}
